@@ -1,0 +1,6 @@
+export S3TEST_CONF=s3-test.conf
+cat test-items | xargs ./virtualenv/bin/nosetests
+
+
+#Collect and output test names only, don't run any tests
+./virtualenv/bin/nosetests -v --collect-only
